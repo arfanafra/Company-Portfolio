@@ -1,0 +1,53 @@
+@import "../../global.scss";
+
+.menu {
+  width: 350px;
+  height: 100vh;
+  background-color: $mainColor;
+  color: $textColor;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+
+
+  &.active {
+    right: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 200;
+    width: 80%;
+
+
+    li {
+      margin-bottom: 20px;
+
+      &:hover {
+        color: $titleColor;
+        // font-weight: 500;
+        letter-spacing: 3px;
+        transition: 0.5s;
+      }
+    }
+
+  }
+
+  .menuLogo {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    color: $titleColor;
+    font-weight: 200;
+    font-family: 'Bebas Neue', cursive;
+  }
+}

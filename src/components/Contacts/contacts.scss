@@ -1,0 +1,13 @@
+@import "../../global.scss";
+
+.contacts {
+  background-color: $mainColor;
+
+  h1 {
+    position: absolute;
+    color: $titleColor;
+    font-weight: 200;
+    font-size: 50px;
+  }
+
+}
