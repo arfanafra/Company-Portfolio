@@ -87,6 +87,11 @@
       color: $titleColor;
       opacity: 1;
       animation: arrowBlink 1.5s step-start infinite;
+
+      &:hover {
+        scale: (1.25);
+        transition: all 0.5s ease;
+      }
     }
 
     @keyframes arrowBlink {

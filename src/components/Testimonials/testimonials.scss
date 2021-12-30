@@ -31,6 +31,11 @@
       justify-content: space-evenly;
       padding: 10px;
       margin: 15px;
+      transition: all 1s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       .top {
         padding: 10px;

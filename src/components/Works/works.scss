@@ -12,6 +12,11 @@
     font-size: 50px;
     position: absolute;
 
+    &:hover {
+      scale: (1.5);
+      transition: all 0.3s ease-in-out;
+    }
+
     &.left {
       left: 200px;
       cursor: pointer;
