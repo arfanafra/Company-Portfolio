@@ -1,0 +1,111 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: $backgroundColor;
+  display: flex;
+
+  .introImage {
+    display: flex;
+    flex: 0.75;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 900px;
+      height: 900px;
+      background-color: $titleColor;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .introTitle {
+    overflow: hidden;
+    flex: 0.25;
+    position: relative;
+
+    .introText {
+      width: 100%;
+      height: 100%;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 50px;
+        color: $titleColor;
+        font-weight: 200;
+        margin: -10px 0px;
+      }
+
+      h2 {
+        font-size: 35px;
+        color: $textColor;
+        font-weight: 100;
+        // letter-spacing: 1px;
+      }
+
+      h3 {
+        font-size: 30px;
+        color: $textColor;
+        font-weight: 100;
+        letter-spacing: 5.7px;
+
+        .ityped-cursor {
+          color: $titleColor;
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 25%;
+    }
+
+    .wrapper {
+      font-size: 50px;
+      color: $titleColor;
+      opacity: 1;
+      animation: arrowBlink 1.5s step-start infinite;
+
+      &:hover {
+        scale: (1.25);
+        transition: all 0.5s ease;
+      }
+    }
+
+    @keyframes arrowBlink {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
